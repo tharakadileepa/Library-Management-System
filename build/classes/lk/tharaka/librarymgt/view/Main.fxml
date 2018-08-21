@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="504.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.tharaka.librarymgt.control.MainController">
+   <children>
+      <ImageView fx:id="members" fitHeight="117.0" fitWidth="146.0" layoutX="47.0" layoutY="184.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8_Conference_48px_3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="book_Store" fitHeight="117.0" fitWidth="146.0" layoutX="220.0" layoutY="184.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8_Books_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="book_Borrow" fitHeight="117.0" fitWidth="146.0" layoutX="399.0" layoutY="184.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8_Borrow_Book_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="book_Return" fitHeight="117.0" fitWidth="146.0" layoutX="560.0" layoutY="184.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8_Return_Book_48px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="129.0" layoutY="87.0" prefHeight="56.0" prefWidth="490.0" text="LIBRARY MANAGEMENT SYSTEM">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="43.0" fitWidth="139.0" layoutX="569.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/ijse-logo.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMenu" layoutX="337.0" layoutY="349.0" prefHeight="56.0" prefWidth="376.0" text="WELCOME !!!" textFill="#631f7a">
+         <font>
+            <Font name="System Italic" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="56.0" fitWidth="76.0" layoutX="262.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8_TripAdvisor_48px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="265.0" layoutY="462.0" prefHeight="17.0" prefWidth="254.0" text="Copyright 2018 IJSE - DEP Version" />
+      <Label layoutX="237.0" layoutY="135.0" prefHeight="29.0" prefWidth="305.0" text="Knowledge Is The Power Of Person">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" layoutX="229.0" layoutY="405.0" text="Please select one of above main operations to proceed" />
+   </children>
+</AnchorPane>

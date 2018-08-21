@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="672.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="lk.tharaka.librarymgt.control.MemberRegisterController">
+   <children>
+      <Label layoutX="223.0" layoutY="15.0" prefHeight="46.0" prefWidth="240.0" text="Member Register">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtMembID" labelFloat="true" layoutX="43.0" layoutY="102.0" prefHeight="46.0" prefWidth="275.0" promptText="Member ID" />
+      <JFXTextField fx:id="txtMembAddress" layoutX="343.0" layoutY="173.0" prefHeight="46.0" prefWidth="306.0" promptText="Address" />
+      <JFXTextField fx:id="txtMembName" labelFloat="true" layoutX="43.0" layoutY="173.0" prefHeight="46.0" prefWidth="275.0" promptText="Full Name" />
+      <JFXTextField fx:id="txtMembContact" labelFloat="true" layoutX="343.0" layoutY="102.0" prefHeight="46.0" prefWidth="306.0" promptText="Contact" />
+      <TableView fx:id="tblmemb" layoutX="10.0" layoutY="254.0" prefHeight="250.0" prefWidth="657.0">
+        <columns>
+          <TableColumn prefWidth="110.0" text="Member_ID" />
+          <TableColumn prefWidth="194.0" text="Full_Name" />
+            <TableColumn prefWidth="157.0" text="Contact" />
+            <TableColumn prefWidth="195.0" text="Address" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnMembAdd" layoutX="385.0" layoutY="516.0" onMouseClicked="#getMember" prefHeight="46.0" prefWidth="121.0" text="ADD" />
+      <JFXButton fx:id="btnMembCancel" layoutX="528.0" layoutY="516.0" onMouseClicked="#removeMem" prefHeight="46.0" prefWidth="121.0" text="CANCEL" />
+      <ImageView fitHeight="38.0" fitWidth="121.0" layoutX="546.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/ijse-logo.gif" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnMembShow" layoutX="258.0" layoutY="516.0" onMouseClicked="#showMemReport" prefHeight="46.0" prefWidth="121.0" text="SHOW REPORT" />
+   </children>
+</AnchorPane>
